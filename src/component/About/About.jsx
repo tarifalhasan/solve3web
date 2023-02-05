@@ -1,5 +1,5 @@
 import React from "react";
-import captchaImg from "../../assets/media/captcha.png";
+import captchaImg from "../../assets/captcha.png";
 const About = () => {
   return (
     <section className="px-5 pt-24 md:px-12">

@@ -30,7 +30,7 @@
   }
   /* Hero page */
   .hero {
-    background: url(./assets/media/solve3-logo.svg);
+    background: url(./assets/solve3-logo.svg);
     background-color: rgba(0, 0, 0, 0.55%);
 
     @apply bg-no-repeat bg-contain
