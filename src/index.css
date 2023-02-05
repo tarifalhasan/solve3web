@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-dark: #0a1424;
+    --color-bg-midnight-blue: #0d1d35;
+    --color-text-light: #d9d9d9;
+    --color-text-puple: #8c00ff;
+    --color-bg-electric-blue: #0091ff;
+  }
+
+  @font-face {
+    font-family: "segoe";
+    font-weight: 400;
+    src: url("/fonts/SegoeUI.woff") format("woff");
+  }
+  @font-face {
+    font-family: "segoe";
+    font-weight: 700;
+    src: url("/fonts/SegoeUIBold.woff") format("woff");
+  }
+}
+
+@layer components {
+  /* Button Primary */
+
+  /* Hero page */
+  .hero {
+    background: url(./assets/media/solve3-logo.svg);
+    background-color: rgba(0, 0, 0, 0.55%);
+
+    @apply bg-no-repeat bg-contain
+      bg-center;
+  }
+  .hero h2 {
+    @apply text-white text-[30px] md:text-[50px] font-normal font-segoe leading-[30px] md:leading-[45px] tracking-[.63px];
+  }
+  .hero p {
+    @apply text-base md:text-[24px] md:leading-[38px] font-normal  md:w-[80%] text-skin-light mx-auto font-lato;
+  }
+}
