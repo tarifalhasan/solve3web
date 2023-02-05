@@ -25,7 +25,9 @@
 
 @layer components {
   /* Button Primary */
-
+  .btn-primary {
+    @apply block text-base text-white bg-skin-purple w-[143px] py-2.5 rounded-sm;
+  }
   /* Hero page */
   .hero {
     background: url(./assets/media/solve3-logo.svg);
@@ -39,5 +41,12 @@
   }
   .hero p {
     @apply text-base md:text-[24px] md:leading-[38px] font-normal  md:w-[80%] text-skin-light mx-auto font-lato;
+  }
+  /* about the project */
+  .about_the_project h2 {
+    @apply font-lato font-bold tracking-[0.64px] text-white;
+  }
+  .about_the_project p {
+    @apply font-lato font-bold text-[16px] leading-[30px] tracking-[0.03em] text-skin-light;
   }
 }
