@@ -14,12 +14,12 @@ const Navbar = () => {
             className="h-[49px] mr-3 sm:h-[56px]"
             alt="Flowbite Logo"
           />
-          <span className="self-center  text-xl font-bold font-segoe whitespace-nowrap dark:text-white">
+          <h3 className="self-center  text-xl font-bold font-segoe whitespace-nowrap dark:text-white">
             SOLVE3
             <span className="self-center text-base  whitespace-nowrap font-segoe font-normal block text-white">
               WEB3 CAPTCHA
             </span>
-          </span>
+          </h3>
         </Link>
         <div className="flex md:order-2">
           <button

@@ -2,15 +2,15 @@ import React from "react";
 import captchaImg from "../../assets/captcha.png";
 const About = () => {
   return (
-    <section className="px-5 pt-24 md:px-12">
+    <section className="px-5 pt-24 lg:px-16 xl-px-0">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-2">
         <div className="col-span-7 about_the_project">
           <div className="flex flex-col gap-y-7">
             <div>
-              <h2 className="text-[50px] leading-[70px]">
+              <h2 className="text-[50px] text-white leading-[70px]">
                 About the <span className="text-skin-purple">project.</span>
               </h2>
-              <p>
+              <p className="text-sm text-skin-light font-lato">
                 <b className="text-skin-purple">SOLVE3</b> was built during the
                 Polygon Buidl It hackathon (2022) and is therefore still very
                 early. It was fun to buidl and we think there is a market for a
@@ -26,8 +26,8 @@ const About = () => {
               />
             </div>
             <div className=" ml-0 md:ml-5">
-              <h2 className="text-[22px]">What's next?</h2>
-              <p>
+              <h2 className="text-xl text-white">What's next?</h2>
+              <p className="text-sm text-skin-light">
                 We are looking forward to bring up a public beta during the next
                 few weeks. During this time we want to find projects as beta
                 testers to find out what we can improve and how it is accepted

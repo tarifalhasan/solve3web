@@ -2,9 +2,9 @@ import React from "react";
 import { whatNow } from "../../constant/data";
 const WhatNow = () => {
   return (
-    <section className=" mx-auto pb-10 px-5 lg:px-10 2xl:px-0 ">
+    <section className=" mx-auto py-16 px-5 lg:px-16 2xl:px-0 ">
       <div className="text-center">
-        <h2 className="font-lato font-bold text-4xl text-[#F5F5F5]">
+        <h2 className="font-lato font-bold text-4xl lg:text-7xl text-[#F5F5F5]">
           What now?
         </h2>
         <p className="font-lato text-xl pt-5 text-skin-light">Fairness.</p>
@@ -13,7 +13,7 @@ const WhatNow = () => {
         {whatNow.map((data) => (
           <div
             key={data.id}
-            className="bg-[#0D1D35] rounded-[10px] p-4 md:p-10"
+            className="bg-[#0D1D35]  rounded-[10px] p-4 md:p-10"
           >
             <h4 className="text-base md:text-2xl text-white font-roboto font-bold">
               {data.title}
