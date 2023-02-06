@@ -21,12 +21,7 @@ const WhatNow = () => {
             <p className="text-xs md:text-lg py-3 md:py-6 font-normal text-[#F5F5F5] font-roboto ">
               {data.description}
             </p>
-            <p className="text-xs md:text-lg py-3 md:py-6 font-normal text-[#F5F5F5] font-roboto ">
-              {data.description}
-            </p>
-            <p className="text-xs md:text-lg py-3 md:py-6 font-normal text-[#F5F5F5] font-roboto ">
-              {data.description}
-            </p>
+
             <button className="bg-transparent mt-6 h-[50px] w-[170px] border-2 rounded-md text-white text-[18px]">
               Learn More
             </button>
