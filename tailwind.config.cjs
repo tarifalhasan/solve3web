@@ -32,25 +32,25 @@ module.exports = {
       },
       fontSize: {
         xs: [
-          "14px",
+          "0.875em",
           {
-            lineHeight: "25px",
+            lineHeight: "1.5625em",
             letterSpacing: "0.03em",
             fontWeight: "400",
           },
         ],
         sm: [
-          "16px",
+          "1em",
           {
-            lineHeight: "30px",
+            lineHeight: "1.875em",
             letterSpacing: "0.03em",
             fontWeight: "400",
           },
         ],
         base: [
-          "18px",
+          "1.125em",
           {
-            lineHeight: "28px",
+            lineHeight: "1.75em",
             letterSpacing: "0.01em",
             fontWeight: "400",
           },
@@ -58,21 +58,21 @@ module.exports = {
         lg: [
           "17px",
           {
-            lineHeight: "28px",
+            lineHeight: "1.75em",
             letterSpacing: "0.05em",
             fontWeight: "400",
           },
         ],
         xl: [
-          "24px",
+          "1.5em",
           {
-            lineHeight: "28px",
+            lineHeight: ".50em",
             letterSpacing: "0.05em",
             fontWeight: "400",
           },
         ],
         "2xl": [
-          "28px",
+          "1.75em",
           {
             lineHeight: "25px",
             letterSpacing: "0.05em",
@@ -80,25 +80,33 @@ module.exports = {
           },
         ],
         "4xl": [
-          "42px",
+          "2.625em",
           {
-            lineHeight: "46px",
+            lineHeight: "2.852em",
             letterSpacing: "0.05em",
             fontWeight: "700",
           },
         ],
         "5xl": [
-          "50px",
+          "2.375em",
           {
-            lineHeight: "47px",
+            lineHeight: "1.375em",
+            letterSpacing: "0.05em",
+            fontWeight: "500",
+          },
+        ],
+        "6xl": [
+          "3.125em",
+          {
+            lineHeight: "0.8em",
             letterSpacing: "0.05em",
             fontWeight: "700",
           },
         ],
         "7xl": [
-          "70px",
+          "4.375em",
           {
-            lineHeight: "46px",
+            lineHeight: "0.8em",
             letterSpacing: "0.05em",
             fontWeight: "700",
           },
