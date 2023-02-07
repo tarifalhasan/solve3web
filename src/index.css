@@ -31,7 +31,11 @@
   .btn-primary {
     @apply block text-base text-white bg-skin-purple w-[143px] py-2.5 rounded-sm;
   }
-
+  /* mobile navbar */
+  .mobile_navbar {
+    transform: translateX(0px) !important;
+    transition: 0.5s all ease !important;
+  }
   /* Hero page */
   .hero {
     background: url(./assets/solve3-logo.svg);
@@ -45,5 +49,8 @@
   }
   .hero p {
     @apply text-base md:text-[24px] md:leading-[38px] font-normal  md:w-[80%] text-skin-light mx-auto font-lato;
+  }
+  .box_regtegle {
+    transform: rotate(15deg);
   }
 }

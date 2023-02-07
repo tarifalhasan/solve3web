@@ -6,9 +6,9 @@ const TestiMonialsDetails = ({ testiMonialDetail }) => {
     testiMonialDetail;
 
   return (
-    <div class="item  drop-shadow-lg flex flex-col gap-y-6">
+    <div className="item  drop-shadow-lg flex flex-col gap-y-6">
       <div className="flex items-end gap-3">
-        <img className="img-circle block" src={profilePhoto} alt="" />
+        <img className="img-circle block" src={profilePhoto} alt={name} />
         <div>
           <h4 className="text-xl  text-white md:text-[#525252] font-lato font-medium ">
             {name}

@@ -6,7 +6,7 @@ export const NavLinks = [
     title: "Home",
   },
   {
-    href: "learnmore",
+    href: "/learnmore",
     title: "Learn More",
   },
   {
@@ -14,7 +14,7 @@ export const NavLinks = [
     title: "Demo",
   },
   {
-    href: "twitter",
+    href: "/twitter",
     title: "Twitter",
   },
 ];
@@ -99,7 +99,7 @@ export const whatElse = [
     description2: `Aside from being a puzzle, a captcha can also be a marketing medium. Businesses or individuals can rent captcha images like they can rent billboards across town. As a provider of these services, solve3 takes a small percentage of this income, while distributing the rest to the users solving the captchas.`,
   },
   {
-    id: 2,
+    id: 3,
     title: " TLDR; ",
     featureImage: image3,
     description1: `
@@ -114,33 +114,49 @@ export const whatElse = [
 import clientPhoto from "../assets/client.png";
 export const testiMonials = [
   {
-    id: 1,
-    clientName: "Leo",
+    name: "Leo",
+    shortTitle: "It was a very good experience",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
+    job: "Web Develoepr",
+
     profilePhoto: clientPhoto,
     job: "Lead Designer",
-    feedbackStatus: "It was a very good experience",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
-    ratting: 4,
   },
   {
-    id: 2,
-    clientName: "Leo",
-    profilePhoto: clientPhoto,
-    job: "Lead Designer",
-    feedbackStatus: "It was a very good experience",
-    review:
+    name: "Leo",
+    shortTitle: "It was a very good experience",
+    description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
-    ratting: 5,
+    job: "Web Develoepr",
+
+    profilePhoto: clientPhoto,
   },
   {
-    id: 3,
-    clientName: "Leo",
-    profilePhoto: clientPhoto,
-    job: "Lead Designer",
-    feedbackStatus: "It was a very good experience",
-    review:
+    name: "Leo",
+    shortTitle: "It was a very good experience",
+    description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
-    ratting: 4,
+    job: "Web Develoepr",
+
+    profilePhoto: clientPhoto,
+  },
+  {
+    name: "Leo",
+    shortTitle: "It was a very good experience",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
+    job: "Web Develoepr",
+
+    profilePhoto: clientPhoto,
+  },
+  {
+    name: "Leo",
+    shortTitle: "It was a very good experience",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
+    job: "Web Develoepr",
+
+    profilePhoto: clientPhoto,
   },
 ];

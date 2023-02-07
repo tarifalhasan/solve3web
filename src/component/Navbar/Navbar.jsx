@@ -1,18 +1,25 @@
-import React from "react";
-
-import logo from "../../assets/solve3-logo.svg";
+import { useState } from "react";
+import { BiMenu } from "react-icons/bi";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { NavLinks } from "../../constant/data";
-import { FiMenu } from "react-icons/fi";
+import logo from "../../assets/solve3-logo.svg";
+import MobileMenu from "./MobileNav";
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="bg-transparent px-2 sm:px-4 py-2.5  fixed w-full z-20 top-0 left-0 ">
-      <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <Link to="/" className="flex items-center">
+    <header className="relative">
+      <nav className="px-2   pt-5 flex items-center justify-between z-50 max-w-[1440px] w-full  mx-auto left-0 fixed top-0  right-0 bg-transparent">
+        <div className="flex  items-center">
           <img
             src={logo}
             className="h-[49px] mr-3 sm:h-[56px]"
-            alt="Flowbite Logo"
+            alt="solve3web"
           />
           <h3 className="self-center  text-xl font-bold font-segoe whitespace-nowrap dark:text-white">
             SOLVE3
@@ -20,21 +27,10 @@ const Navbar = () => {
               WEB3 CAPTCHA
             </span>
           </h3>
-        </Link>
-        <div className="flex md:order-2">
-          <button
-            type="button"
-            className="hidden md:inline text-skin-purple   focus:outline-none border border-[#8c00ff] font-bold  rounded-lg text-base py-1.5 px-12 text-center mr-3 md:mr-0"
-          >
-            Button
-          </button>
-          <FiMenu className="text-white md:hidden" size={36} />
         </div>
-        <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky"
-        >
-          <ul className="flex flex-col md:flex-row gap-6">
+        {/* Dekstop And Big Screen Navbar */}
+        <div>
+          <ul className="nav_item hidden md:flex items-center gap-10">
             {NavLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -48,8 +44,23 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-      </div>
-    </nav>
+        <div className="flex md:order-2">
+          <button
+            type="button"
+            className="hidden md:inline text-skin-purple   focus:outline-none border border-[#8c00ff] font-bold  rounded-lg text-base py-1.5 px-12 text-center mr-3 md:mr-0"
+          >
+            Button
+          </button>
+        </div>
+        <BiMenu
+          onClick={() => openNavbar()}
+          className="text-white md:hidden"
+          size={36}
+        />
+        {/* Mobile Menu */}
+        <MobileMenu openNavbar={openNavbar} isOpen={isOpen} />
+      </nav>
+    </header>
   );
 };
 

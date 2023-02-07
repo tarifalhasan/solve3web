@@ -1,63 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import TestiMonialsDetails from "./TestiMonialsDetails";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./Testimonial.css";
+import { testiMonials } from "../../constant/data";
 import clientPhoto from "../../assets/client.png";
 const TestiMonials = () => {
-  const testiMonials = [
-    {
-      name: "Leo",
-      shortTitle: "It was a very good experience",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
-      job: "Web Develoepr",
-      clientName: "Leo",
-      profilePhoto: clientPhoto,
-      job: "Lead Designer",
-    },
-    {
-      name: "Leo",
-      shortTitle: "It was a very good experience",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
-      job: "Web Develoepr",
-      clientName: "Leo",
-      profilePhoto: clientPhoto,
-      job: "Lead Designer",
-    },
-    {
-      name: "Leo",
-      shortTitle: "It was a very good experience",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
-      job: "Web Develoepr",
-      clientName: "Leo",
-      profilePhoto: clientPhoto,
-      job: "Lead Designer",
-    },
-    {
-      name: "Leo",
-      shortTitle: "It was a very good experience",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
-      job: "Web Develoepr",
-      clientName: "Leo",
-      profilePhoto: clientPhoto,
-      job: "Lead Designer",
-    },
-    {
-      name: "Leo",
-      shortTitle: "It was a very good experience",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
-      job: "Web Develoepr",
-      clientName: "Leo",
-      profilePhoto: clientPhoto,
-      job: "Lead Designer",
-    },
-  ];
   //Owl Carousel Settings
   const options = {
     loop: true,
@@ -74,7 +24,7 @@ const TestiMonials = () => {
         items: 1,
       },
       600: {
-        items: 3,
+        items: 2,
       },
       1000: {
         items: 3,
@@ -99,13 +49,44 @@ const TestiMonials = () => {
               {...options}
             >
               {testiMonials.length === 0 ? (
-                <div class="item"></div>
+                <div class="item  drop-shadow-lg flex flex-col gap-y-6">
+                  <div className="flex items-end gap-3">
+                    <img
+                      className="img-circle block"
+                      src={clientPhoto}
+                      alt="tarif"
+                    />
+                    <div>
+                      <h4 className="text-xl  text-white md:text-[#525252] font-lato font-medium ">
+                        Tarif Al Hasan
+                      </h4>
+                      <span className="text-[12px]  text-white md:text-[#525252]">
+                        web deceloper
+                      </span>
+                    </div>
+                    <div className="star flex gap-2 text-[#ff711c] flex-wrap">
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                    </div>
+                  </div>
+                  <h3 className="text-xl  text-white md:text-[#525252] text-center font-lato font-bold">
+                    It was very good experience
+                  </h3>
+                  <p className="text-base  text-white md:text-[#525252] text-justify font-lato">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vitae tempore ipsum dicta, cupiditate dolore temporibus
+                    amet.
+                  </p>
+                </div>
               ) : (
-                testiMonials.map((testiMonialDetail) => {
+                testiMonials.map((testiMonialDetail, index) => {
                   return (
                     <TestiMonialsDetails
                       testiMonialDetail={testiMonialDetail}
-                      key={testiMonialDetail._key}
+                      key={index}
                     />
                   );
                 })

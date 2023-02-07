@@ -1,22 +1,24 @@
 import React from "react";
-import { whySolveData } from ".././../constant/data";
-import Card from "./Card";
+import card1 from "../../assets/card1.png";
 const WhySolve = () => (
-  <section className="my-16 py-14 bg-[#EAEAEA] px-10 lg:px-16 xl-px-0">
-    <div className="text-center">
-      <h2 className="text-skin-purple text-[50px] title">Why SOLVE3?</h2>
-      <p className="sub-title text-[#0A1424]">Because.</p>
-    </div>
-    <div className="card">
-      {whySolveData.map((data) => (
-        <Card
-          key={data.id}
-          title={data.title}
-          subTitile={data.subTitle}
-          array={data.details}
-          featuresImage={data.featuresImage}
-        />
-      ))}
+  <section className="px-5 bg-[#EAEAEA]">
+    <div className="wrap py-10">
+      <div className="text-center">
+        <h2 className="text-5xl text-skin-purple">Why Solve</h2>
+        <p className="text-[#0A1424] text-xl leading-[47px]">Because.</p>
+      </div>
+      <main>
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="right_box relative">
+            <div className="aspect-w-16 z-40 aspect-h-9">
+              <img src={card1} alt="solve3webservice" />
+            </div>
+            <div className="aspect-w-12 bottom-20 md:bottom-40 w-[80%] left-10 lg:bottom-28 aspect-h-4">
+              <div className="box_regtegle  bg-[#8C00FF33]"></div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </section>
 );

@@ -87,6 +87,14 @@ module.exports = {
             fontWeight: "700",
           },
         ],
+        "5xl": [
+          "50px",
+          {
+            lineHeight: "47px",
+            letterSpacing: "0.05em",
+            fontWeight: "700",
+          },
+        ],
         "7xl": [
           "70px",
           {
