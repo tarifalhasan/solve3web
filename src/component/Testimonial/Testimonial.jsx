@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaQuoteLeft, FaStar } from "react-icons/fa";
+import { FaStarHalfAlt, FaStar } from "react-icons/fa";
 import TestiMonialsDetails from "./TestiMonialsDetails";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -69,7 +69,7 @@ const TestiMonials = () => {
                       <FaStar />
                       <FaStar />
                       <FaStar />
-                      <FaStar />
+                      <FaStarHalfAlt />
                     </div>
                   </div>
                   <h3 className="text-xl  text-white md:text-[#525252] text-center font-lato font-bold">

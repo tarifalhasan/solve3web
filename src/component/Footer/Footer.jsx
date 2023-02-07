@@ -34,14 +34,10 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row justify-between items-center">
         <ul className="flex items-center gap-3">
           <li className="text-sm text-white">
-            <Link Link to="/privacy">
-              Privacy
-            </Link>
+            <Link to="/privacy">Privacy</Link>
           </li>
           <li className="text-sm text-white">
-            <Link Link to="/privacy">
-              Privacy
-            </Link>
+            <Link to="/privacy">Privacy</Link>
           </li>
         </ul>
         <p className="text-sm text-skin-light">

@@ -119,7 +119,7 @@ export const testiMonials = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
     job: "Web Develoepr",
-
+    ratting: 5,
     profilePhoto: clientPhoto,
     job: "Lead Designer",
   },
@@ -129,7 +129,16 @@ export const testiMonials = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
     job: "Web Develoepr",
-
+    ratting: 4,
+    profilePhoto: clientPhoto,
+  },
+  {
+    name: "Tarif",
+    shortTitle: "It was a very good experience",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
+    job: "Web Develoepr",
+    ratting: 5,
     profilePhoto: clientPhoto,
   },
   {
@@ -138,7 +147,7 @@ export const testiMonials = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
     job: "Web Develoepr",
-
+    ratting: 5,
     profilePhoto: clientPhoto,
   },
   {
@@ -147,16 +156,7 @@ export const testiMonials = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
     job: "Web Develoepr",
-
-    profilePhoto: clientPhoto,
-  },
-  {
-    name: "Leo",
-    shortTitle: "It was a very good experience",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.",
-    job: "Web Develoepr",
-
+    ratting: 4,
     profilePhoto: clientPhoto,
   },
 ];

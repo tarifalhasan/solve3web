@@ -32,7 +32,6 @@ const Navbar = () => {
                 <Link
                   to={link.href}
                   className="block py-2 pl-3 pr-4 text-white text-base leading-[19px] font-bold font-segoe"
-                  aria-current="page"
                 >
                   {link.title}
                 </Link>
@@ -43,7 +42,7 @@ const Navbar = () => {
         <div className="flex md:order-2">
           <button
             type="button"
-            className="hidden md:inline text-skin-purple   focus:outline-none border border-[#8c00ff] font-bold  rounded-lg text-base py-1.5 px-12 text-center mr-3 md:mr-0"
+            className="hidden md:inline text-skin-purple   focus:outline-none border border-[#8c00ff] font-bold  rounded-sm text-base py-1 px-12 text-center mr-3 md:mr-0"
           >
             Button
           </button>

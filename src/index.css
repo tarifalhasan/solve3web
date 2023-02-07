@@ -30,7 +30,10 @@
   /* Button Primary */
   .btn-primary {
     @apply block text-base text-white bg-skin-purple w-[143px] py-2.5 rounded-sm;
+    transform: translateX(0px) !important;
+    transition: 0.5s all ease !important;
   }
+
   /* mobile navbar */
   .mobile_navbar {
     transform: translateX(0px) !important;

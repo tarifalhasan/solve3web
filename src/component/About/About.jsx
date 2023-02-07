@@ -7,7 +7,7 @@ const About = () => {
         <div className="col-span-7 about_the_project">
           <div className="flex flex-col gap-y-7">
             <div>
-              <h2 className="text-[50px] text-white leading-[70px]">
+              <h2 className="text-[32px] md:text-[50px] text-white leading-[70px]">
                 About the <span className="text-skin-purple">project.</span>
               </h2>
               <p className="text-sm text-skin-light font-lato">

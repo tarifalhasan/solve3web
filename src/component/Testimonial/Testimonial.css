@@ -55,7 +55,7 @@
 }
 .owl-carousel .owl-dots .owl-dot {
   display: inline-block;
-  padding-top: 4rem;
+  padding-top: 4.2rem;
 }
 .owl-carousel .owl-dots .owl-dot span {
   background: #c5c5c5;
@@ -78,7 +78,7 @@
   gap: 142px;
 }
 .owl-nav > button > span {
-  font-size: 56px;
+  font-size: 35px;
   color: #5b5b5b;
 }
 .owl-theme .owl-nav [class*="owl-"]:hover {
@@ -92,8 +92,9 @@
   text-align: center;
   padding-top: 2rem;
 }
-@media only screen and (max-width: 767px) {
-  .owl-nav {
-    top: 83%;
-  }
+
+.owl-theme .owl-nav {
+  margin-top: 20px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
 }

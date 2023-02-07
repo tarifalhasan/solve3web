@@ -1,8 +1,8 @@
 import React from "react";
-import { FaQuoteLeft, FaStar } from "react-icons/fa";
+import { FaStarHalfAlt, FaStar } from "react-icons/fa";
 
 const TestiMonialsDetails = ({ testiMonialDetail }) => {
-  const { job, shortTitle, profilePhoto, name, description } =
+  const { job, shortTitle, profilePhoto, name, description, ratting } =
     testiMonialDetail;
 
   return (
@@ -17,13 +17,23 @@ const TestiMonialsDetails = ({ testiMonialDetail }) => {
             {job}
           </span>
         </div>
-        <div className="star flex gap-2 text-[#ff711c] flex-wrap">
-          <FaStar />
-          <FaStar />
-          <FaStar />
-          <FaStar />
-          <FaStar />
-        </div>
+        {ratting === 5 ? (
+          <div className="star flex gap-2 text-[#ff711c] flex-wrap">
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStarHalfAlt />
+          </div>
+        ) : (
+          <div className="star flex gap-2 text-[#ff711c] flex-wrap">
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+          </div>
+        )}
       </div>
       <h3 className="text-xl  text-white md:text-[#525252] text-center font-lato font-bold">
         {shortTitle}
