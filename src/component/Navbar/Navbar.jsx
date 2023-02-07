@@ -14,16 +14,12 @@ const Navbar = () => {
 
   return (
     <header className="relative">
-      <nav className="px-2   pt-5 flex items-center justify-between z-50 max-w-[1440px] w-full  mx-auto left-0 fixed top-0  right-0 bg-transparent">
+      <nav className="px-16 pt-5 flex items-center justify-between z-50 max-w-[1440px] w-full  mx-auto left-0 fixed top-0  right-0 bg-transparent">
         <div className="flex  items-center">
-          <img
-            src={logo}
-            className="h-[49px] mr-3 sm:h-[56px]"
-            alt="solve3web"
-          />
+          <img src={logo} className="h-[49px]  sm:h-[56px]" alt="solve3web" />
           <h3 className="self-center  text-xl font-bold font-segoe whitespace-nowrap dark:text-white">
             SOLVE3
-            <span className="self-center text-base  whitespace-nowrap font-segoe font-normal block text-white">
+            <span className="self-center text-[15px] leading-[36px]  whitespace-nowrap font-segoe font-normal block text-white">
               WEB3 CAPTCHA
             </span>
           </h3>

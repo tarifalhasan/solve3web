@@ -48,7 +48,7 @@ module.exports = {
           },
         ],
         base: [
-          "1.125em",
+          "1em",
           {
             lineHeight: "1.75em",
             letterSpacing: "0.01em",

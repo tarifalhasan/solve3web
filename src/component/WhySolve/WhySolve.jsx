@@ -14,8 +14,8 @@ const WhySolve = () => (
         <h2 className="text-6xl text-skin-purple">Why Solve</h2>
         <p className="text-[#0A1424] text-xl leading-[47px]">Because.</p>
       </div>
-      <main className="pt-16 flex flex-col gap-y-14 xl:gap-y-[26rem]">
-        <div className="grid gap-y-14 md:gap-y-[13rem] grid-cols-1 md:gap-x-12 lg:grid-cols-2">
+      <main className="pt-16 flex flex-col gap-y-14 2xl:gap-y-[26rem]">
+        <div className="grid gap-y-16 md:gap-y-[13rem] grid-cols-1 md:gap-x-12 lg:grid-cols-2">
           {/* features image */}
 
           <Image img={card1} />
