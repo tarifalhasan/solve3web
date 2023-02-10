@@ -2,9 +2,10 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section className="container mx-auto px-5 md:px-10">
-      <div className="hero">
-        <div className="text-center pt-16 md:pt-8 flex flex-col gap-1 md:gap-y-[16px] opacity-100">
+    <section className="container  mx-auto px-5 md:px-10">
+      <div className="hero relative bg-opacity-80 z-50">
+        <div className="hero_image"></div>
+        <div className="  text-white text-center pt-16 md:pt-8 flex flex-col gap-1 md:gap-y-[16px] opacity-100">
           <h2>
             Hi, I’m <b>SOLVE3</b>. <br />
             <span className="text-[19px] md:text-[50px]">
@@ -17,7 +18,7 @@ const Home = () => {
           </p>
           <div className="grid mt-10 md:mt-0 md:flex  mx-auto flex-col md:flex-row justify-center gap-4 md:gap-7">
             <button className="btn-primary">Get Started</button>
-            <button className="block text-base text-white bg-transparent border  w-[143px] py-2.5 rounded-sm">
+            <button className="block text-base text-white bg-transparent border  w-[143px] py-2.5 ">
               Twitter
             </button>
           </div>

@@ -7,7 +7,7 @@ import logo from "../../assets/solve3-logo.svg";
 const MobileMenu = ({ openNavbar, isOpen }) => {
   return (
     <div
-      className={`fixed mobile_navbar px-4 pt-6 w-full h-full bg-skin-dark  ${
+      className={`fixed mobile_navbar 2xl:px-0 px-4 pt-6 w-full h-full bg-skin-dark  ${
         isOpen ? "right-0" : "right-full"
       }  z-50 top-0 `}
     >
@@ -33,7 +33,7 @@ const MobileMenu = ({ openNavbar, isOpen }) => {
       </div>
       <ul className="flex flex-col pt-7 md:flex-row gap-6">
         {NavLinks.map((link) => (
-          <li key={link.href}>
+          <li key={link.href} onClick={openNavbar}>
             <Link
               to={link.href}
               className="block py-2 pl-3 pr-4 text-white text-base leading-[19px] font-bold font-segoe"

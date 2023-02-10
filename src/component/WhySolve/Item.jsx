@@ -10,8 +10,8 @@ const Item = ({ icon, iconBg, Title, descripe }) => (
       </div>
     </div>
     <div>
-      <h4 className="text-[20px] leading-[28px] text-[#222]">{Title}</h4>
-      <p className="text-[1.3125em] text-[#727272]">{descripe}</p>
+      <h4 className="text-[20px] leading-[29px] text-[#222]">{Title}</h4>
+      <p className="text-[1.2125em] text-[#727272]">{descripe}</p>
     </div>
   </div>
 );

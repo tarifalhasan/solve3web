@@ -15,7 +15,7 @@ const Card = ({
 }) => (
   <div>
     <div>
-      <h4 className="text-5xl font-lato font-medium text-[#0A1424]">
+      <h4 className="text-[2em] md:text-5xl font-lato font-medium text-[#0A1424]">
         {heading}
       </h4>
       <p className="text-[21px] leading-[46px] text-[#727272] font-lato">

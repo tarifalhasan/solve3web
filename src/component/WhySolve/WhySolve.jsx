@@ -1,7 +1,7 @@
 import React from "react";
 import card1 from "../../assets/card1.png";
 import card2 from "../../assets/card2.png";
-import Image from "./Image";
+import FeatureImage from "./FeatureImage";
 import Card from "./Card";
 import AdvantageSvg from "../../assets/Advantage.svg";
 import Strength from "../../assets/Strength.svg";
@@ -15,13 +15,12 @@ const WhySolve = () => (
         <p className="text-[#0A1424] text-xl leading-[47px]">Because.</p>
       </div>
       <main className="pt-16 2xl:min-h-[1617px] flex flex-col gap-y-14 2xl:gap-y-[26rem]">
+        {/* :::::Left Column :::::: */}
         <div className="grid gap-y-16 md:gap-y-[13rem] grid-cols-1 md:gap-x-12 lg:grid-cols-2">
-          {/* features image */}
+          {/* features FeatureImage */}
           <div className="min-h-[255px]">
-            <Image img={card1} />
+            <FeatureImage img={card1} />
           </div>
-
-          {/* left side */}
           <Card
             heading="Bots are a problem"
             subTitle="The faster the bot, the more its owner has to gain"
@@ -35,6 +34,7 @@ const WhySolve = () => (
             iconBg2={"bg-[#64b5f633]"}
           />
         </div>
+        {/* ::::: Right Column :::::::: */}
         <div className="grid grid-cols-1 pb-[2rem] md:gap-x-12 lg:grid-cols-2">
           <Card
             heading="Bots are a business"
@@ -51,7 +51,7 @@ const WhySolve = () => (
 
           {/* features image */}
           <div className="min-h-[254px]">
-            <Image img={card2} />
+            <FeatureImage img={card2} />
           </div>
         </div>
       </main>

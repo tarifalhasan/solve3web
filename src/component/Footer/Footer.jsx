@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/solve3-logo.svg";
 const Footer = () => (
   <footer className="pt-16 mt-24 pb-4 px-5 lg:px-16 md:bg-skin-dark-200">
-    <div className="grid md:grid-cols-5 gap-y-8">
+    <div className="grid items-center md:grid-cols-5 gap-y-8">
       <h2 className="col-span-3 text-center lg:text-left text-2xl text-skin-light">
         <span className="hidden lg:block">Get the latest updates.</span>
         Subscribe for our newsletter

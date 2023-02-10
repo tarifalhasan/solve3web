@@ -18,7 +18,7 @@ const About = () => {
                 there is still a lot of development to be done.
               </p>
             </div>
-            <div className="block md:hidden col-span-5">
+            <div className="block md:hidden col-span-5 ">
               <img
                 className="h-[455px] mx-auto md:mx-0 md:ml-auto"
                 src={captchaImg}
@@ -26,7 +26,7 @@ const About = () => {
               />
             </div>
             <div className=" ml-0 md:ml-5">
-              <h2 className="text-xl text-white">What's next?</h2>
+              <h2 className="text-xl leading-[2em] text-white">What's next?</h2>
               <p className="text-sm text-skin-light">
                 We are looking forward to bring up a public beta during the next
                 few weeks. During this time we want to find projects as beta
